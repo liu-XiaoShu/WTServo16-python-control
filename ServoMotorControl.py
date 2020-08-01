@@ -186,7 +186,7 @@ class ServoMotorControl:
 
         #转动角度计算 (500us~2500us,对应的角度 0°~180, 单位 us (0.09°))
 
-        #0度有些不准，微调
+        #0度可能有些不准，微调
         if move_angle < 7:
             move_angle = 7
         move_angle = int(move_angle/0.09) + 500 #us
